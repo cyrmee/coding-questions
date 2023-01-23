@@ -6,7 +6,7 @@ public class Solution {
         {
             if(merged.Count == 0 || merged.Last()[1] < item[0])
                 merged.AddLast(item);
-            else if (merged.Last()[1] >= item[0])
+            else
                 merged.Last()[1] = Math.Max(merged.Last()[1], item[1]);
         }
         return merged.ToArray();
