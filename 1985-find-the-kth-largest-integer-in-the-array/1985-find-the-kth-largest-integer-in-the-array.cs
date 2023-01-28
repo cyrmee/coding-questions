@@ -14,9 +14,6 @@ public class Solution {
         var listOfNums = new List<string>( nums );
         listOfNums.Sort(new Comparer());
         
-        for (int i = 0; i < listOfNums.Count; i++)
-            Console.Write(listOfNums[i] + " ");
-        Console.WriteLine();
         return listOfNums[listOfNums.Count - k];
     }
 }
